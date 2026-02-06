@@ -288,7 +288,7 @@ def main() -> None:
     
     # Search input
     initial_query = ""
-    query_params = st.experimental_get_query_params()
+    query_params = st.query_params
     
     # Handle loading a previous search
     if 'load' in query_params:
