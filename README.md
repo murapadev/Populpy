@@ -1,101 +1,59 @@
-# PopulPy 📊
+# 📊 PopulPy
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://streamlit.io)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Python](https://img.shields.io/badge/python-3.8+-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-Latest-red)
 
-Herramienta de análisis de tendencias de búsqueda con integración de múltiples motores (Google, Bing, DuckDuckGo) y visualizaciones interactivas.
-![populpy](https://github.com/user-attachments/assets/2a8db5bc-6efc-4e93-a86b-fe590d4542ba)
+> Herramienta de análisis de tendencias de búsqueda con integración de múltiples motores.
 
-## 🚀 Características
+---
 
-- 🔍 Búsqueda integrada con múltiples proveedores
-- 📈 Análisis de tendencias temporales
-- 🗺️ Visualización geográfica de interés
-- ☁️ Generación de nubes de palabras
-- 📊 Gráficos interactivos con Plotly
-- 🎨 Temas claro/oscuro
-- 💾 Historial de búsquedas
+## 📋 Tabla de contenidos
+
+- [Características](#-características)
+- [Instalación](#-instalación)
+- [Uso](#-uso)
+- [Contribución](#-contribución)
+- [Licencia](#-licencia)
+
+## ✨ Características
+
+- 🔍 **Multi-proveedor**: Google, Bing, DuckDuckGo
+- 📈 **Análisis temporal**: Tendencias a lo largo del tiempo
+- 🗺️ **Geográfico**: Visualización por ubicación
+- ☁️ **Word Clouds**: Nubes de palabras
+- 📊 **Interactivo**: Gráficos Plotly
+- 🎨 **Temas**: Claro/oscuro
 
 ## 🛠️ Instalación
 
-### Prerrequisitos
-
-1. Python 3.8 o superior
-2. Una cuenta de Google Cloud con acceso a la API de búsqueda personalizada
-3. Una cuenta de Azure con acceso a la API de Bing
-4. Una cuenta de DuckDuckGo (opcional)
-
-### Instalación
-
-1. Clona este repositorio:
-
 ```bash
-git clone https://github.com/murapa96/populpy
-cd populpy
-```
+# Clonar
+git clone https://github.com/murapadev/Populpy.git
+cd Populpy
 
-2. Instala las dependencias necesarias:
-
-```bash
+# Instalar
 pip install -r requirements.txt
 ```
 
-### Configuración de Variables de Entorno
-
-Crea un archivo `.env` en el directorio raíz con la siguiente estructura:
-
-```
-GOOGLE_API_KEY=TU_API_KEY_DE_GOOGLE
-SEARCH_ENGINE_ID=TU_ID_DE_MOTOR_DE_BUSQUEDA
-BING_API_KEY=TU_API_KEY_DE_BING
-```
-
-Reemplaza `TU_API_KEY_DE_GOOGLE`, `TU_ID_DE_MOTOR_DE_BUSQUEDA` y `TU_API_KEY_DE_BING` con tus credenciales correspondientes.
-
-## 📖 Uso
-
-### Interfaz Web (Streamlit)
-
-Para ejecutar la interfaz web, usa el siguiente comando:
+## 🚀 Uso
 
 ```bash
+# App Streamlit
 streamlit run app.py
+
+# CLI
+python main.py --query "tu búsqueda"
 ```
 
-### Línea de Comandos
+## 📝 Contribución
 
-```bash
-python main.py -q "término de búsqueda" -c "código de país" -w "ruta para guardar la imagen"
-```
-
-- `-q`: Término de búsqueda.
-- `-c`: Código de país (por defecto es `es`).
-- `-w`: Ruta para guardar la imagen de la nube de palabras.
-
-## 🗂️ Estructura del Proyecto
-
-```
-populpy/
-├── app.py
-├── main.py
-├── README.md
-├── requirements.txt
-└── .env.example
-```
-
-## 📝 ToDo
-
-- [ ] Añadir soporte para más proveedores de búsqueda
-- [ ] Implementar exportación de datos en múltiples formatos
-- [ ] Mejorar la persistencia de datos
-- [ ] Añadir más visualizaciones
-- [ ] Implementar caché de resultados
+Las contribuciones son bienvenidas. Abre un issue o pull request.
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+Este proyecto está licenciado bajo los términos de la licencia MIT.
 
-## 👤 Autor
+---
 
-Pablo Ramos Muras [@Murapa96](https://github.com/Murapa96)
+*Hecho con ❤️ por [murapadev](https://github.com/murapadev)*
