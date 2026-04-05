@@ -56,4 +56,4 @@ Este proyecto está licenciado bajo los términos de la licencia MIT.
 
 ---
 
-*Hecho con ❤️ por [murapadev](https://github.com/murapadev)*
+*Hecho con ❤️ por [Pablo Ramos Muras](https://github.com/murapadev)*
